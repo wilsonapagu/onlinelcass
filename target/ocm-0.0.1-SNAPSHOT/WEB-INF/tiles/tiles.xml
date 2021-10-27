@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Templates -->
+	
+	<definition name="layout.main" template="/WEB-INF/pages/layout/main.jsp">
+		<put-attribute name="title" value="BRAC University" />
+	<put-attribute name="header" value="/WEB-INF/pages/layout/header.jsp" />
+		<put-attribute name="leftmenu" value="/WEB-INF/pages/layout/leftmenu.jsp" />
+		<put-attribute name="body" value="" />
+		 <!--<put-attribute name="footer" value="/WEB-INF/tiles/layout/footer.jsp" /> -->
+	</definition>
+	
+	<!-- Pages -->	
+	
+	<definition name="user.ndex" extends="layout.main">
+		<put-attribute name="body" value="/WEB-INF/pages/index.jsp" />
+	</definition>
+ 
+	<definition name="company/create" extends="layout.main">
+		<put-attribute name="body" value="/WEB-INF/pages/leave/create.jsp" />
+	</definition>
+	
+	<!--<definition name="employee/createEmployee" extends="layout.main">-->
+		<!--<put-attribute name="body" value="/WEB-INF/pages/employee/createEmployee.jsp" />-->
+	<!--</definition>-->
+	
+	<definition name="leave/hello" extends="layout.main">
+		<put-attribute name="body" value="/WEB-INF/pages/leave/hello.jsp" />
+	</definition>
+	
+	<definition name="leave/leaveForm" extends="layout.main">
+		<put-attribute name="body" value="/WEB-INF/pages/leave/leaveForm.jsp" />
+	</definition>
+</tiles-definitions>

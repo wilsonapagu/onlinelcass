@@ -1,0 +1,7 @@
+com\bipro\ocm\AppConfig.class
+com\bipro\ocm\controller\WelcomeController.class
+com\bipro\ocm\OcmApplication.class
+com\bipro\ocm\WebSecurityConfig.class
+com\bipro\ocm\controller\DashboardController.class
+com\bipro\ocm\ServletInitializer.class
+com\bipro\ocm\controller\UserController.class
